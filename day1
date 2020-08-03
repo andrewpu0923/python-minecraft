@@ -1,0 +1,23 @@
+123+456
+Out[1]: 579
+
+456-123
+Out[2]: 333
+
+789*123
+Out[3]: 97047
+
+30/3
+Out[4]: 10.0
+
+"Minecraft"
+Out[5]: 'Minecraft'
+
+"XD"
+Out[6]: 'XD'
+
+"X"+"D"
+Out[7]: 'XD'
+
+"X"+"D"*5
+Out[8]: 'XDDDDD'
