@@ -1,1 +1,226 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Aug  4 10:37:02 2020
+
+@author: D305
+"""
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+mc.postToChat("I'm wacthing you.")
+while True:
+   x,y,z=mc.player.getTilePos()
+   mc.postToChat("you are located on X:"+str(x)+", Y:"+str(y)+", Z:"+str(z))
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+x,y,z=mc.player.getTilePos()
+mc.setBlock(x,y,z,57)
+mc.setBlock(x,y+1,z+1,41)
+mc.setBlock(x,y+2,z+2,133)
+mc.setBlock(x,y+3,z+3,22)
+mc.setBlock(x,y+4,z+4,152)
+mc.setBlock(x,y+5,z+5,49)
+mc.setBlock(x,y+6,z+6,42)
+mc.setBlock(x,y+7,z+7,138)
+mc.setBlock(x,y+8,z+8,116)
+mc.setBlock(x,y+9,z+9,120)
+mc.setBlock(x,y+10,z+10,35,2)
+
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+x,y,z=mc.player.getTilePos()
+mc.setBlock(x,y-1,z,57)
+mc.setBlock(x+1,y-1,z,57)
+
+mc.setBlock(x+2,y-1,z,57)
+
+mc.setBlock(x+2,y-1,z-1,57)
+
+mc.setBlock(x+2,y-1,z-2,57)
+
+mc.setBlock(x+1,y-1,z-2,57)
+
+mc.setBlock(x,y-1,z-2,57)
+
+mc.setBlock(x,y-1,z-1,57)
+
+
+mc.setBlock(x,y,z,57)
+mc.setBlock(x+1,y,z,57)
+
+mc.setBlock(x+2,y,z,57)
+
+mc.setBlock(x+2,y,z-1,57)
+
+mc.setBlock(x+2,y,z-2,57)
+
+mc.setBlock(x+1,y,z-2,57)
+
+mc.setBlock(x,y,z-2,57)
+
+mc.setBlock(x,y,z-1,57)
+
+
+mc.setBlock(x,y+1,z,57)
+mc.setBlock(x+1,y+1,z,57)
+
+mc.setBlock(x+2,y+1,z,57)
+
+mc.setBlock(x+2,y+1,z-1,57)
+
+mc.setBlock(x+2,y+1,z-2,57)
+
+mc.setBlock(x+1,y+1,z-2,57)
+
+mc.setBlock(x,y+1,z-2,57)
+
+mc.setBlock(x,y+1,z-1,57)
+
+
+
+mc.setBlock(x,y+2,z,57)
+mc.setBlock(x+1,y+2,z,57)
+
+mc.setBlock(x+2,y+2,z,57)
+
+mc.setBlock(x+2,y+2,z-1,57)
+
+mc.setBlock(x+2,y+2,z-2,57)
+
+mc.setBlock(x+1,y+2,z-2,57)
+
+mc.setBlock(x,y+2,z-2,57)
+
+mc.setBlock(x,y+2,z-1,57)
+
+
+
+mc.setBlock(x,y+3,z,57)
+mc.setBlock(x+1,y+3,z,57)
+
+mc.setBlock(x+2,y+3,z,57)
+
+mc.setBlock(x+2,y+3,z-1,57)
+
+mc.setBlock(x+2,y+3,z-2,57)
+
+mc.setBlock(x+1,y+3,z-2,57)
+
+mc.setBlock(x,y+3,z-2,57)
+
+mc.setBlock(x,y+3,z-1,57)
+
+
+
+mc.setBlock(x,y+4,z,57)
+mc.setBlock(x+1,y+4,z,57)
+
+mc.setBlock(x+2,y+4,z,57)
+
+mc.setBlock(x+2,y+4,z-1,57)
+
+mc.setBlock(x+2,y+4,z-2,57)
+
+mc.setBlock(x+1,y+4,z-2,57)
+
+mc.setBlock(x,y+4,z-2,57)
+
+mc.setBlock(x,y+4,z-1,57)
+
+
+
+
+
+
+
+
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+x,y,z=mc.player.getTilePos()
+mc.setBlocks(x+25,y+1,z+25,x-25,y-1,z-25,46)
+
+
+
+
+
+import random
+import time
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+time. sleep(3)
+x,y,z=mc.player.getTilePos()
+while True:
+    color=random.randrange(0,16)
+    mc.setBlocks(x+25,y-1,z+25,x-25,y-1,z-25,95,color)
+    time. sleep(0.3)
+
+
+
+
+
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+x,y,z=mc.player.getTilePos()
+length=10
+hight=10
+width=10
+blocktype=133
+air=0
+mc.setBlocks(x,y,z,x+length,y+hight,z+width,blocktype)
+mc.setBlocks(x+1,y+1,z+1,x+length-1,y+hight-1,z+width-1,air)
+
+
+
+
+while True:
+    x,y,z=mc.player.getTilePos()
+    color=random.randrange(0,9)
+    mc.setBlock(x,y,z,38,color)
+    time. sleep(0.3)
+
+
+
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+import time
+while True:
+    x,y,z=mc.player.getTilePos()
+    mc.setBlock(x,y,z,8)
+    time. sleep(0.5)
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+while True:
+    x,y,z=mc.player.getTilePos()
+    a=mc.getBlock(x+1,y-1,z)
+    b=mc.getBlock(x,y-1,z+1)
+    c=mc.getBlock(x-1,y-1,z)
+    d=mc.getBlock(x,y-1,z-1)
+    if a==8 or a==9 or b==8 or b==9 or c==8 or c==9 or d==8 or d==9:
+        mc.setBlocks(x-1,y-1,z-1,x+1,y-1,z+1,19) 
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+x,y,z=mc.player.getTilePos()
+a=0
+while a<5:
+    mc.setBlocks(x,y-20,z,x+30,y+20,z,19)
+    z=z-5
+    a=a+1
+    
+    
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+x,y,z=mc.player.getTilePos()
+try:
+    blocktype=int(input("請輸入你要的方塊ID:"))
+    mc.setBlocks(x-1,y-1,z-1,x+1,y+1,z+1,blocktype)
+except:    
+    print("只能輸入數字")
+    mc.postToChat("只能輸入數字")
+    
+    
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+ 
+userName = input("請輸入姓名: ")
+message = input("請輸入發言: ")
+mc.postToChat(" ["+userName + "] " + message)
 
